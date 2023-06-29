@@ -1,0 +1,298 @@
+body {
+   font-family: Helvetica;
+   margin: 0;
+}
+h3{
+  font-size: 30px;
+  text-align: center;
+}
+
+/* BODY-HEADER */
+a {
+   text-decoration: none;
+   color: #000;
+}
+.site-header { 
+  border-bottom: 1px solid #ccc;
+  padding: .5em 1em;
+}
+  
+.site-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+.site-identity {
+  float: left;
+}
+  
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: .7em 0 .3em 0;
+  display: inline-block;
+}
+  
+.site-identity img {
+  max-width: 100px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.site-navigation {
+  float: right;
+}
+  
+.site-navigation ul, li {
+  margin: 0; 
+  padding: 0;
+}
+  
+.site-navigation li {
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+}
+
+.site-navigation li a {
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.site-navigation li a:hover {
+  color: #02b8dd;
+}
+
+/* selected link */
+.site-navigation li a:active {
+  color: rgb(89, 0, 255);
+}
+
+/* BODY/Main2 */
+.main2{
+  width: auto;
+  height: auto;
+}
+.conteneur{
+  position: relative;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+.d2{
+  width: 100%;
+  height: auto;
+  padding-top: 50%;
+  box-shadow: 0px 0px 10px #777;
+  background-color: #EDEDED;
+  background-size: contain;
+  animation: fondu 15s ease-in-out infinite both;
+}
+.d1:hover{
+  animation-play-state: paused;
+}
+@keyframes fondu{
+  0%{background-image: url("images/accueil2.jpg");}
+  20.33%{background-image: url("images/accueil7.jpg");}
+  40.67%{background-image: url("images/plan.jpg");}
+  60.50%{background-image: url("images/pollution\ interieiur2.jpg");}
+  80.20%{background-image: url("images/accueil6.jpg");}
+  100%{background-image: url("images/accueil5.jpg");}
+}
+
+/* BODY/SERVICES */
+#services
+{
+  background-color: #fff;
+  margin-top: 10px;  
+  padding-bottom: 20px;
+}
+#services h3
+{
+  width: 400px;
+  text-transform: uppercase;
+  margin: 0 auto 20px auto;
+  border-bottom: 2px solid #02b8dd;
+  padding-top: 5px;  
+}
+#services article
+{
+  width: 340px;
+  height: 300px;
+  float: left;
+  border-radius: 10px;
+}
+.overlay
+{
+  background: rgba(255, 255, 255, 0.404);
+  height: 100%;
+  width: 200px;
+  
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+}
+article h4
+{
+  border-bottom: 1px solid #ddd ;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#services p
+{
+  text-align: center;
+  margin: 10px;
+}
+.button-2
+{
+  color: #fff;
+  background-color: #ff7a00;
+  padding: 6px 20px;
+  border-radius: 3px;
+}
+.button-2:hover
+{
+  color: #fff;
+  background-color: #02b8dd;
+}
+
+/* DODY/A PROPOS */
+#APropos{
+  background-color: #efefef;
+  padding-bottom: 20px;
+}
+#APropos h3{
+  width: 400px;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+    border-bottom: 2px solid #02b8dd;
+    padding-top: 20px;
+}
+
+/* BODY/REALISATIONS */
+#realisations{
+  padding-bottom: 10px;
+}
+.cards-wrapper{
+  display: flex;
+}
+#realisations h3
+{
+    width: 400px;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+    border-bottom: 2px solid #02b8dd;
+    
+}
+.card{
+  margin: o .5em;
+  width: calc(100%/3);
+}
+.image-wrapper{
+  height: 22vw;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 567PX)  {
+  .card:not(:first-child){
+    display: none;
+  }
+}
+.image-wrapper img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* BODY/CONTACT */
+#contact
+{
+    text-align: center;
+    background-color: #efefef;
+    margin: auto;
+    padding-bottom: 20px;
+}
+#contact h3
+{
+    width: 400px;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+    border-bottom: 2px solid #02b8dd;
+    padding-top: 20px;
+}
+form
+{
+  padding-bottom: 20px;
+}
+#form-content{
+ text-align: left;
+ padding-left: 10px;
+}
+#article{
+  padding-top: 5px;
+}
+#name{
+  display: flex;
+}
+label
+{
+    font-weight: bold;
+    font-size: 15px;
+   
+    color: #777;
+}
+input[type="text"]
+{
+    padding: 10px;
+    font-size: 20px;
+    
+    border: 2px solid #ddd;
+    border-radius: 3px;
+}
+.button-3
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 11px;
+    background-color: #02b8dd;
+    border-style: none;
+    border-radius: 3px;
+}
+.button-3:hover
+{
+    color: #fff;
+    background-color: #444;
+}
+/* Style pour cacher les boutons et les formulaires */
+.boutons, .formulaires {
+  display: none;
+}
+/* BODY/FOOTER */
+footer
+{
+    height: 260px;
+    background-color: #444;
+}
+footer h1
+{
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+.copyright
+{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #777;
+}
+#meuble{
+  display: flex;
+}
+#Non-meuble{
+  display: flex;
+}
