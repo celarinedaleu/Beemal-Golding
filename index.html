@@ -32,7 +32,7 @@
       </nav>
     </header>
     
-    <section id="main2" >
+    <section id="main2">
       <div class="conteneur">
         <div class="d2"></div>
       </div>
@@ -40,11 +40,14 @@
         <h2> L'ESTIMATION <br> <strong>AU SENTIMENT PRES</strong> </h2>
       </marquee>-->
     </section>
-
-    <section id="services"><div><h3>Nos services</h3></div>
+    
+    <section id="services">
+      <div>
+        <h3>Nos services</h3>
+      </div>
       <div class="container">
         <div class="row">
-          <div class="col" style="margin: 5px;">
+          <div class="col">
             <article style="background-image: url(images/renovation.jpg);">
               <div class="overlay">
                 <h4>Travaux de Renovation</h4>
@@ -53,7 +56,7 @@
               </div>
             </article>
           </div>
-          <div class="col" style="margin: 5px;">
+          <div class="col">
             <article style="background-image: url(images/humidite.jpg);">
               <div class="overlay">
                 <h4>Humidite des Constructions</h4>
@@ -62,7 +65,7 @@
               </div>
             </article>
           </div>
-          <div class="col" style="margin: 5px;">
+          <div class="col">
             <article style="background-image: url(images/pollutioninterieur.jpg);">
               <div class="overlay">
                 <h4>Pollution de L'Interieur</h4>
@@ -72,10 +75,10 @@
             </article>
           </div>
         </div>
-      </div> 
+      </div>
       <div class="container">
         <div class="row">
-          <div class="col" style="margin: 5px;">
+          <div class="col">
             <article style="background-image: url(images/Construction.jpg);">
               <div class="overlay">
                 <h4>Service Immobilier</h4>
@@ -84,7 +87,7 @@
               </div>
             </article>
           </div>
-          <div class="col" style="margin: 5px;">
+          <div class="col">
             <article style="background-image: url(images/plan.jpg);">
               <div class="overlay">
                 <h4>PLANS ET DEVIS</h4>
@@ -93,7 +96,7 @@
               </div>
             </article>
           </div>
-          <div class="col" style="margin: 5px;">
+          <div class="col">
             <article style="background-image: url(images/jardin.jpg);">
               <div class="overlay">
                 <h4>JARDIN ET POTAGER</h4>
@@ -105,6 +108,85 @@
         </div>
       </div>
     </section>
+    
+    <style>
+      /* Default styles */
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+   
+    
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -5px;
+      }
+    
+      .col {
+        flex: 1;
+        margin: 5px;
+      }
+      article {
+  position: relative;
+  height: 100px; /* increase the height */
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+    
+      h4 {
+        margin-top: 0;
+      }
+    
+      p {
+        margin-bottom: 0;
+      }
+    
+      .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px; /* increase the padding */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button-2 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 1; /* add a higher z-index to make the button visible */
+}
+    
+      /* Media queries */
+      @media (max-width: 768px) {
+        .col {
+          flex-basis: 50%;
+        }
+      }
+    
+      @media (max-width: 576px) {
+        .col {
+          flex-basis: 100%;
+        }
+      }
+    </style>
 
     <section id="APropos"><div><h3>A Propos</h3></div>
       <div class="container">
