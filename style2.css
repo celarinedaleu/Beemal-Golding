@@ -1,6 +1,7 @@
 body {
-   font-family: Helvetica;
-   margin: 0;
+  font-family: Helvetica;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 h3{
   font-size: 30px;
@@ -9,12 +10,13 @@ h3{
 
 /* BODY-HEADER */
 a {
-   text-decoration: none;
-   color: #000;
+  text-decoration: none;
+  color: #000;
 }
 .site-header { 
   border-bottom: 1px solid #ccc;
   padding: .5em 1em;
+  position: fixed;
 }
   
 .site-header::after {
