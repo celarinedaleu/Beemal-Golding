@@ -163,6 +163,10 @@ article h4
 #APropos{
   background-color: #efefef;
   padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #APropos h3{
   width: 400px;
