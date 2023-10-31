@@ -16,7 +16,6 @@ a {
 .site-header { 
   border-bottom: 1px solid #ccc;
   padding: .5em 1em;
-  position: fixed;
 }
   
 .site-header::after {
