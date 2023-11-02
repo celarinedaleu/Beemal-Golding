@@ -9,67 +9,6 @@ h3{
 }
 
 /* BODY-HEADER */
-a {
-  text-decoration: none;
-  color: #000;
-}
-.site-header { 
-  border-bottom: 1px solid #ccc;
-  padding: .5em 1em;
-}
-  
-.site-header::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-  
-.site-identity {
-  float: left;
-}
-  
-.site-identity h1 {
-  font-size: 1.5em;
-  margin: .7em 0 .3em 0;
-  display: inline-block;
-}
-  
-.site-identity img {
-  max-width: 100px;
-  float: left;
-  margin: 0 10px 0 0;
-}
-
-.site-navigation {
-  float: right;
-}
-  
-.site-navigation ul, li {
-  margin: 0; 
-  padding: 0;
-}
-  
-.site-navigation li {
-  display: inline-block;
-  margin: 1.4em 1em 1em 1em;
-}
-
-.site-navigation li a {
-    color: #444;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* mouse over link */
-.site-navigation li a:hover {
-  color: #02b8dd;
-}
-
-/* selected link */
-.site-navigation li a:active {
-  color: rgb(89, 0, 255);
-}
 
 /* BODY/Main2 */
 .main2{
