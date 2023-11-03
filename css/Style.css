@@ -8,8 +8,6 @@ h3{
   text-align: center;
 }
 
-/* BODY-HEADER */
-
 /* BODY/Main2 */
 .main2{
   width: auto;
@@ -34,12 +32,12 @@ h3{
   animation-play-state: paused;
 }
 @keyframes fondu{
-  0%{background-image: url("images/accueil2.jpg");}
-  20.33%{background-image: url("images/accueil7.jpg");}
-  40.67%{background-image: url("images/plan.jpg");}
-  60.50%{background-image: url("images/pollution\ interieiur2.jpg");}
-  80.20%{background-image: url("images/accueil6.jpg");}
-  100%{background-image: url("images/accueil5.jpg");}
+  0%{background-image: url("../images/accueil2.jpg");}
+  20.33%{background-image: url("../images/accueil7.jpg");}
+  40.67%{background-image: url("../images/plan.jpg");}
+  60.50%{background-image: url("../images/pollution\ interieiur2.jpg");}
+  80.20%{background-image: url("../images/accueil6.jpg");}
+  100%{background-image: url("../images/accueil5.jpg");}
 }
 
 /* BODY/SERVICES */
@@ -216,46 +214,7 @@ input[type="text"]
   display: none;
 }
 /* BODY/FOOTER */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 30px 0;
-}
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-h1 {
-  font-size: 2rem;
-  margin: 0;
-}
-
-.orange {
-  color: #f90;
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-   p {
-  margin-bottom: 0;
-  overflow-y: scroll;
-  max-height: 100px; /* set a maximum height for the text */
-}
-.copyright
-{
-    text-align: center;
-    font-weight: bold;
-    padding-top: 30px;
-    color: #777;
-}
 #meuble{
   display: flex;
 }
