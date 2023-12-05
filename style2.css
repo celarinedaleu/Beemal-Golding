@@ -8,6 +8,69 @@ h3{
   text-align: center;
 }
 
+/* BODY-HEADER */
+a {
+  text-decoration: none;
+  color: #000;
+}
+.site-header { 
+  border-bottom: 1px solid #ccc;
+  padding: .5em 1em;
+}
+  
+.site-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+.site-identity {
+  float: left;
+}
+  
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: .7em 0 .3em 0;
+  display: inline-block;
+}
+  
+.site-identity img {
+  max-width: 100px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.site-navigation {
+  float: right;
+}
+  
+.site-navigation ul, li {
+  margin: 0; 
+  padding: 0;
+}
+  
+.site-navigation li {
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+}
+
+.site-navigation li a {
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.site-navigation li a:hover {
+  color: #02b8dd;
+}
+
+/* selected link */
+.site-navigation li a:active {
+  color: rgb(89, 0, 255);
+}
+
 /* BODY/Main2 */
 .main2{
   width: auto;
@@ -32,12 +95,12 @@ h3{
   animation-play-state: paused;
 }
 @keyframes fondu{
-  0%{background-image: url("../images/accueil2.jpg");}
-  20.33%{background-image: url("../images/accueil7.jpg");}
-  40.67%{background-image: url("../images/plan.jpg");}
-  60.50%{background-image: url("../images/pollution\ interieiur2.jpg");}
-  80.20%{background-image: url("../images/accueil6.jpg");}
-  100%{background-image: url("../images/accueil5.jpg");}
+  0%{background-image: url("images/accueil2.jpg");}
+  20.33%{background-image: url("images/accueil7.jpg");}
+  40.67%{background-image: url("images/plan.jpg");}
+  60.50%{background-image: url("images/pollution\ interieiur2.jpg");}
+  80.20%{background-image: url("images/accueil6.jpg");}
+  100%{background-image: url("images/accueil5.jpg");}
 }
 
 /* BODY/SERVICES */
@@ -101,10 +164,6 @@ article h4
 #APropos{
   background-color: #efefef;
   padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 #APropos h3{
   width: 400px;
@@ -213,17 +272,25 @@ input[type="text"]
 .boutons, .formulaires {
   display: none;
 }
-
-/*Partenaires*/
-.v-line{
-  border-left: thick solid #000;
-  height: 100px;
-  left: 50%;
-  margin-top: 50px;
-  position: absolute;
- }
 /* BODY/FOOTER */
-
+footer
+{
+    height: 260px;
+    background-color: #444;
+}
+footer h1
+{
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+.copyright
+{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #777;
+}
 #meuble{
   display: flex;
 }
