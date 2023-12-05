@@ -213,6 +213,15 @@ input[type="text"]
 .boutons, .formulaires {
   display: none;
 }
+
+/*Partenaires*/
+.v-line{
+  border-left: thick solid #000;
+  height: 100px;
+  left: 50%;
+  margin-top: 50px;
+  position: absolute;
+ }
 /* BODY/FOOTER */
 
 #meuble{
