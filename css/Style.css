@@ -165,54 +165,6 @@ article h4
     border-bottom: 2px solid #02b8dd;
     padding-top: 20px;
 }
-form
-{
-  padding-bottom: 20px;
-}
-#form-content{
- text-align: left;
- padding-left: 10px;
-}
-#article{
-  padding-top: 5px;
-}
-#name{
-  display: flex;
-}
-label
-{
-    font-weight: bold;
-    font-size: 15px;
-   
-    color: #777;
-}
-input[type="text"]
-{
-    padding: 10px;
-    font-size: 20px;
-    
-    border: 2px solid #ddd;
-    border-radius: 3px;
-}
-.button-3
-{
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 11px;
-    background-color: #02b8dd;
-    border-style: none;
-    border-radius: 3px;
-}
-.button-3:hover
-{
-    color: #fff;
-    background-color: #444;
-}
-/* Style pour cacher les boutons et les formulaires */
-.boutons, .formulaires {
-  display: none;
-}
 
 /*Partenaires*/
 .v-line{
