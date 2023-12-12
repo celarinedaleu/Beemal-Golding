@@ -32,12 +32,15 @@ h3{
   animation-play-state: paused;
 }
 @keyframes fondu{
-  0%{background-image: url("../images/accueil2.jpg");}
-  20.33%{background-image: url("../images/accueil7.jpg");}
-  40.67%{background-image: url("../images/plan.jpg");}
-  60.50%{background-image: url("../images/pollution\ interieiur2.jpg");}
-  80.20%{background-image: url("../images/accueil6.jpg");}
-  100%{background-image: url("../images/accueil5.jpg");}
+  0%{background-image: url("../images/Accueil0\ .jpeg");}
+  8.17%{background-image: url("../images/2.jpeg");}
+  20.30%{background-image: url("../images/3.jpeg");}
+  32.41%{background-image: url("../images/4.jpeg");}
+  45.59%{background-image: url("../images/5.jpeg");}
+  62.75%{background-image: url("../images/6.jpeg");}
+  79.84%{background-image: url("../images/7.jpeg");}
+  87.95%{background-image: url("../images/8.jpeg");}
+  100%{background-image: url("../images/9.jpeg");}
 }
 
 /* BODY/SERVICES */
