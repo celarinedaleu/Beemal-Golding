@@ -132,8 +132,13 @@ article h4
     border-bottom: 2px solid #02b8dd;
     
 }
+@media screen and (min-width: 568PX)  {
+  .cards-wrapper{
+    display: flex;
+  }
+}
 .card{
-  margin: o .5em;
+  margin: 0 .5em;
   width: calc(100%/3);
 }
 .image-wrapper{
