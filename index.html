@@ -37,15 +37,30 @@
         </ul>
       </nav>
     </header>
+    <section>
+      <div class="slideshow-container">
+        <div class="slides">
+          <img src="images/Accueil0 .jpeg" alt="Image 1">
+          <img src="images/2.jpeg" alt="Image 2">
+          <img src="images/3.jpeg" alt="Image 3">
+          <img src="images/4.jpeg" alt="Image 4">
+          <img src="images/5.jpeg" alt="Image 5">
+          <img src="images/6.jpeg" alt="Image 6">
+          <img src="images/7.jpeg" alt="Image 7">
+          <img src="images/8.jpeg" alt="Image 8">
+          <img src="images/9.jpeg" alt="Image 9">
+        </div>
+      </div>
+    </section>
     
-    <section id="main2">
+     <!--<section id="main2">
       <div class="conteneur">
         <div class="d2"></div>
       </div>
-      <!--<marquee behavior="scroll" direction="left" width="100%" bgcolor="#02b8dd">
+     <marquee behavior="scroll" direction="left" width="100%" bgcolor="#02b8dd">
         <h2> L'ESTIMATION <br> <strong>AU SENTIMENT PRES</strong> </h2>
-      </marquee>-->
-    </section>
+      </marquee>
+    </section>-->
     
     <section id="services">
       <div>
@@ -282,7 +297,7 @@
                 <h5 class="card-title">Nous pour Vous</h5>
                 <p class="card-text">Vos remarques nous donnent la force de faire mieux notre travail.  Aussi loin que vous êtes, nous portons notre projet vers vous, mais pas uniquement, nous le portons pour vous également. 
                   L’estime, gage de notre probité, donne le sentiment de davantage vous comprendre et de créer des espaces propices pour vous, pour les tous petits et pour les personnes du troisième âge. Ce qui réduira à coup sur 
-                  les risques de maladies et accroitra au mieux le QI des enfants car toute action qui prend en compte son environnement et qui le préserve nous parle. C’est dans cette lancée que le très célèbre homme d’affaires Libano-Mexicain Carlos SLIM a déclaré : « … Il est important de donner un meilleur pays à nos enfants, mais il est plus important de donner de meilleurs enfants à notre pays… Cela commence par l’assainissement de leurs espaces de vie. 
+                  les risques de maladies et accroitra au mieux le QI des enfants car toute action qui prend en compte son environnement et qui le préserve nous parle. C’est dans cette lancée que le très célèbre homme d’affaires Libano - Mexicain Carlos SLIM a déclaré : « … Il est important de donner un meilleur pays à nos enfants, mais il est plus important de donner de meilleurs enfants à notre pays… Cela commence par l’assainissement de leurs espaces de vie. 
                     </p>
               </div>
             </div>
@@ -420,6 +435,7 @@
       </div>
     </section>
     
+    
     <section id="contact"><div><h3>Notre porte feuille</h3></div>
       <div>Chez Beemal Golding nous savons que le confort est une aspiration humaine mais également 
         un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à 
@@ -466,11 +482,31 @@
             <h1 style="text-align: center;">Support</h1>
             <h6 style="text-align: center;">Téléphone: +237 696 242 987 / 674 628 343</h6>
             <h6 style="text-align: center;">Email: info@beemalgolding.com</h6>
-            <button type="button" class="button" style="border-radius: 10px; margin-left: 100px; margin-right: 100px; ">contact us</button>
+            <button type="button" id="contactBtn" style="border-radius: 10px; margin-left: 100px; margin-right: 100px; ">contact us</button>
+
+            <div id="contactForm" class="contact-form-hidden">
+              <h2>Formulaire de Contact</h2>
+              <form id="myForm" method="post" action="php/submit.php">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+                
+                <input type="submit" value="Envoyer">
+              </form>
+            </div>
+
           </div>
         </div>
         <div class="copyright">Copyright © 2023. Tous droits réservés.</div>
-      </div>                    
+      </div>       
+      
+      <script src="Js/Js/script.js"></script>
+      
     </footer>
   </body>
 </HTML>
